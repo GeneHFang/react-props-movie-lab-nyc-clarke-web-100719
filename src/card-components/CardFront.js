@@ -1,11 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class CardFront extends Component {
 
-  render() {
-    return (
-      <div className="card-front" style={{backgroundImage: `url(${''})`}}>
-      </div>
-    )
-  }
+export default class CardFront extends React.Component{
+    render(){
+        //console.log(this.props.poster+" This poster")
+        return(
+            <div className="card-front" style={{backgroundImage: `url(${this.props.poster})`}}></div> 
+        )
+
+
+    }
+
+
 }
+
